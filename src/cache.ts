@@ -36,6 +36,8 @@ interface CachedResponse {
   body: string;
 }
 
+// let value = await env.kv.get("to-do:123");
+
 export class ResponseCache {
   redis: Redis;
 

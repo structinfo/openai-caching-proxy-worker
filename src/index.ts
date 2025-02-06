@@ -8,7 +8,7 @@ export default {
 
     // Currently API usage only incurs costs for POST requests, and these also
     // tend to be the slowest. It may not be desirable to cache GET requests.
-    const isProxyRequest =
+    const isProxyRequest = false &&
       request.method === 'POST' &&
       request.headers.get('content-type') === 'application/json' &&
       ttlString !== '0';
